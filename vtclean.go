@@ -75,6 +75,15 @@ func Clean(line string, color bool) string {
 					case "2":
 						edit.Clear()
 					}
+				case 'J':
+					switch num {
+					case "", "0":
+						edit.ClearRight()
+					case "1":
+						edit.ClearLeft()
+					case "2":
+						edit.Clear()
+					}
 				}
 			} else {
 				i += 1
